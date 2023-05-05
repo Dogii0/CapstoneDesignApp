@@ -85,11 +85,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SeekBar
-        android:id="@+id/BrightnessSlide"
-        android:layout_width="350dp"
+    <com.rtugeek.android.colorseekbar.AlphaSeekBar
+        android:id="@+id/AlphaSlide"
+        android:layout_width="match_parent"
         android:layout_height="20dp"
+        android:layout_marginStart="3dp"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="3dp"
         android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,18 +99,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ColorSlide" />
 
-    <SeekBar
+    <!--    <com.divyanshu.colorseekbar.ColorSeekBar-->
+    <com.rtugeek.android.colorseekbar.ColorSeekBar
         android:id="@+id/ColorSlide"
-        android:layout_width="350dp"
+        android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/BrightnessSlide"
+        app:layout_constraintBottom_toTopOf="@+id/AlphaSlide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/guideline2"
-        app:layout_constraintVertical_chainStyle="spread_inside" />
+        app:layout_constraintTop_toTopOf="@id/guideline2"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -130,5 +132,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
