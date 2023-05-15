@@ -30,14 +30,14 @@
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:backgroundTint="#64A0F0"
-        app:maxImageSize="45dp"
+        app:backgroundTint="#648CC8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Optimizebtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline"
         app:layout_constraintVertical_bias="0.448"
+        app:maxImageSize="45dp"
         app:srcCompat="@drawable/power" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -75,14 +75,14 @@
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:clickable="true"
-        app:maxImageSize="50dp"
-        app:backgroundTint="#64A0F0"
+        app:backgroundTint="#648CC8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Maxpowerbtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Autobtn"
         app:layout_constraintTop_toTopOf="@id/guideline"
         app:layout_constraintVertical_bias="0.482"
+        app:maxImageSize="50dp"
         app:srcCompat="@drawable/high" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
