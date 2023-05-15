@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="411dp"
-        android:layout_height="733dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/morning" />
-
     <View
         android:id="@+id/bottomColor"
         android:layout_width="414dp"
@@ -27,70 +15,90 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/morning_raining" />
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/Autobtn"
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:clickable="true"
+        app:backgroundTint="#64A0F0"
+        app:maxImageSize="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Optimizebtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline"
         app:layout_constraintVertical_bias="0.448"
-        app:srcCompat="@android:drawable/ic_lock_idle_lock" />
+        app:srcCompat="@drawable/power" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/Infobtn"
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:clickable="true"
+        app:backgroundTint="#648CC8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/Switchbtn"
+        app:layout_constraintStart_toEndOf="@+id/Refreshbtn"
         app:layout_constraintTop_toTopOf="@id/guideline"
         app:layout_constraintVertical_bias="0.482"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/manual" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/Switchbtn"
+        android:id="@+id/Refreshbtn"
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:clickable="true"
+        app:backgroundTint="#648CC8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Infobtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Maxpowerbtn"
         app:layout_constraintTop_toTopOf="@id/guideline"
         app:layout_constraintVertical_bias="0.482"
-        app:srcCompat="@android:drawable/ic_lock_power_off" />
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/refresh" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/Optimizebtn"
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:clickable="true"
+        app:maxImageSize="50dp"
+        app:backgroundTint="#64A0F0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/Maxpowerbtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Autobtn"
         app:layout_constraintTop_toTopOf="@id/guideline"
         app:layout_constraintVertical_bias="0.482"
-        app:srcCompat="@android:drawable/presence_online" />
+        app:srcCompat="@drawable/high" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/Maxpowerbtn"
         android:layout_width="81dp"
         android:layout_height="wrap_content"
         android:clickable="true"
+        app:backgroundTint="#648CC8"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Switchbtn"
+        app:layout_constraintEnd_toStartOf="@+id/Refreshbtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/Optimizebtn"
         app:layout_constraintTop_toTopOf="@id/guideline"
         app:layout_constraintVertical_bias="0.482"
-        app:srcCompat="@android:drawable/ic_menu_compass" />
+        app:maxImageSize="50dp"
+        app:srcCompat="@drawable/increase" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -148,26 +156,12 @@
         android:layout_marginEnd="15dp"
         android:clickable="true"
         android:contentDescription="@string/app_name"
+        app:backgroundTint="#648CC8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_manage" />
 
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/refreshBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="341dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="409dp"
-        android:clickable="true"
-        app:layout_constraintBottom_toTopOf="@+id/bottomColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Settingbtn"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
         android:id="@+id/Location"
