@@ -36,7 +36,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline"
-        app:layout_constraintVertical_bias="0.448"
+        app:layout_constraintVertical_bias="0.484"
         app:maxImageSize="45dp"
         app:srcCompat="@drawable/power" />
 
@@ -197,9 +197,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="60dp"
-        android:text="23"
         android:textColor="#000000"
-        android:textSize="80dp"
+        android:textSize="80sp"
         app:layout_constraintBottom_toTopOf="@+id/weather"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -210,9 +209,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
         android:layout_marginBottom="332dp"
-        android:text="Sunny"
-        android:textSize="20dp"
         android:textColor="#000000"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomColor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/temperature" />
